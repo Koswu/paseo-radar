@@ -1,0 +1,7 @@
+*.test.ts
+scripts/
+paseo.json
+.github/
+AGENTS.md
+tsconfig.json
+__pycache__/

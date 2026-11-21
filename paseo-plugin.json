@@ -1,0 +1,19 @@
+{
+  "id": "paseo-radar",
+  "name": "Radar",
+  "description": "External work radar and triage inbox with worktree session launch, draft approval, and scheduled wait checks",
+  "icon": "assets/icon.png",
+  "media": [
+    "assets/radar-board.png",
+    "assets/radar-settings.png"
+  ],
+  "translations": {
+    "zh-CN": {
+      "name": "Radar",
+      "description": "可插拔外部待办雷达与分拣看板，支持一键隔离 Worktree 会话、待确认草稿审阅与等待外部托管监听"
+    }
+  },
+  "requirements": {
+    "paseo": ">=0.15.0"
+  }
+}

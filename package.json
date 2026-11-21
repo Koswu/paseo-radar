@@ -1,0 +1,54 @@
+{
+  "name": "paseo-radar",
+  "version": "0.1.0",
+  "description": "External work radar and triage inbox for Paseo with worktree session launch, draft approval, and scheduled wait checks",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "paseo-plugin.json",
+    "OVERVIEW.md",
+    "OVERVIEW.*.md",
+    "LICENSE",
+    "assets/",
+    "index.client.tsx",
+    "index.server.ts",
+    "client/",
+    "server/",
+    "shared/",
+    "README.md",
+    "README.*.md",
+    "!**/*.test.ts"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "sync-seeds": "node scripts/sync-collector-seeds.mjs",
+    "check-seeds": "node scripts/sync-collector-seeds.mjs --check",
+    "test": "node --experimental-strip-types --test shared/*.test.ts server/*.test.ts"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.15.4",
+    "@tanstack/react-query": "^5.90.11",
+    "@types/node": "^22.0.0",
+    "@types/react": "~19.2.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3",
+    "zod": "^4.4.3"
+  },
+  "author": "Koswu <koswu@outlook.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koswu/paseo-radar.git"
+  },
+  "homepage": "https://github.com/Koswu/paseo-radar",
+  "bugs": {
+    "url": "https://github.com/Koswu/paseo-radar/issues"
+  },
+  "keywords": [
+    "paseo",
+    "plugin",
+    "triage",
+    "worktree",
+    "json-rpc"
+  ]
+}
